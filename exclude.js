@@ -58,14 +58,20 @@
 
 function hello(x,y,z)
 {
-
-    for(let i=x ; i<=y ; i++){
+    for(let i=x ; i<=y ; i++)
+    {
+        z.includes(i) ? '' : console.log("data",i)
         
-        if( i !=  z )
-        {   
-            
-            console.log(i)
-        }
+        // if(z.includes(i))
+        // {   
+
+        // }
+        // else{
+
+        //     console.log("jhjhjh",i);
+        // }
     }
 }
-hello(1,10,10)
+
+
+hello(1,10,[5,6,8])
